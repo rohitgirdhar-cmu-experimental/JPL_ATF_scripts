@@ -1,7 +1,9 @@
 import zmq
 import json
 import happybase
+import urlparse
 
+BASE_URL = 'http://memex.dyndns.org/atf-images/'
 class a_POST_handler:
   def __init__(self,a_service_port):
     self.service_port=a_service_port
@@ -55,4 +57,4 @@ class a_POST_handler:
     return json.dumps(matches)
 
   def getS3URL(self, imid):
-    return imid
+    return urlparse.urljoin(BASE_URL, imid)

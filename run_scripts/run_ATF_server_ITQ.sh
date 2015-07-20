@@ -9,6 +9,7 @@ GLOG_logtostderr=1 ${CODE_PATH}/computeFeatAndSearch.bin \
     -s /home/rgirdhar/memexdata/Dataset/processed/0007_JPL_ATF/Features/CNN/pool5_bg_normed \
     -g /srv2/rgirdhar/Work/Code/0005_ObjSegment/scripts/seg_service_scripts_2/temp-dir/result.jpg \
     --imgslist /home/rgirdhar/memexdata/Dataset/processed/0007_JPL_ATF/Images/lists/Images.txt \
+    --nPathParts -1 \
     --port-num 5564 \
     --num-output 100 \
     --nRerank 1000
